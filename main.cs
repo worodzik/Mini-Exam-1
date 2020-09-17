@@ -9,9 +9,9 @@ class MainClass {
     Console.WriteLine("Enter your weight in pounds");
     double weight = Convert.ToDouble(Console.ReadLine());
 
-    double BMI = (703 * weight) / (height * height);
+    double BMI = Math.Round((703 * weight) / (height * height), 2);
      Console.WriteLine(" " + name + " BMI = " + BMI);
-     Math.Round(BMI);
+     
 
      if (BMI < 18.5){
        Console.WriteLine("health states for  " + name + " is underweight");
